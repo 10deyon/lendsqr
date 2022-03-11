@@ -1,0 +1,41 @@
+{
+  "name": "lendsqr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "migrate": "knex migrate:latest --knexfile database/knexfile.js",
+    "seed": "knex seed:run --knexfile database/knexfile.js",
+    "test": "jest --watchAll --verbose"
+  },
+  "author": "imanuelDeyon",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.0",
+    "express-rate-limit": "^6.3.0",
+    "faker": "^6.6.6",
+    "helmet": "^5.0.2",
+    "hpp": "^0.2.3",
+    "joi": "^17.6.0",
+    "joi-objectid": "^4.0.2",
+    "json-server": "^0.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.15",
+    "knex-orm": "^1.2.0",
+    "mysql2": "^2.3.3",
+    "sqlite3": "^5.0.2",
+    "validator": "^13.7.0",
+    "validator-js": "^0.2.1",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}
