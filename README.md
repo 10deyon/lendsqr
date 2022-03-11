@@ -1,10 +1,10 @@
 # LENDSQR
 ​
 > ### Lendsqr is an assessment that has the following functionalities: 
-A user can create an account
-A user can fund their account
-A user can transfer funds to another user’s account
-A user can withdraw funds from their account
+- [x] A user can create an account
+- [x] A user can fund their account
+- [x] A user can transfer funds to another user’s account
+- [x] A user can withdraw funds from their account
 ​
 This repo is functionality complete but open to fixes!
 ​
@@ -48,16 +48,20 @@ knex migrate:latest
 ​
 ​
 **TL;DR command list**
+```
   git clone https://github.com/10deyon/lendsqr.git
   cd lendsqr
   npm install
   cp .env.example config.env
+```
 
 **Make sure you set the correct database connection information before running the migrations in the .env file** [Environment variables](#environment-variables)
 ​
+```
   knex migrate:latest
   npm run start ```development environment```
   npm run start:prod ```production environment```
+```
 ​
 ## Environment variables
 - `config.env` - Environment variables can be set in this file
@@ -65,7 +69,6 @@ knex migrate:latest
 ***Note*** : You can quickly set the database information and other variables in this file and have the application fully working.
 ​
 ----------
-​
 ## Testing API
 ​
 Run the server
@@ -81,8 +84,7 @@ The root url of the api is
 ```
   http://localhost:3000/api
 ```
-​
-​
+----------
 ## API Specification
 ​
 More information regarding the project can be found here
@@ -92,7 +94,6 @@ More information regarding the project can be found here
 ----------
 ​
 <br>
-​
 ## Run Test
   - User the following command to run test
 ​
